@@ -9,6 +9,7 @@ namespace API_EfCore.Context
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<PedidoItem> PedidosItens { get; set; }
+        public Produto FirstOurDefault { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
